@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { Button } from "./ui/button";
-import { LogIn, Menu, X } from "lucide-react";
+// import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
