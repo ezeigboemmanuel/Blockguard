@@ -6,7 +6,6 @@ import { Button } from "./ui/button";
 import { LogIn, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
-
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const pathname = usePathname();
@@ -55,7 +54,7 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:flex space-x-3">
-        <Link href="/setup">
+        {/* <Link href="/setup">
           <Button className="bg-[#0A2C66]">
             <LogIn className="w-4 h-4 mr-2" /> Sign Up
           </Button>
@@ -64,7 +63,7 @@ const Navbar = () => {
           <Button variant="outline" className="text-[#005544]">
             <LogIn className="w-4 h-4 mr-2" /> Sign In
           </Button>
-        </Link>
+        </Link> */}
         <w3m-button />
       </div>
 
@@ -112,7 +111,7 @@ const Navbar = () => {
               Transactions
             </Link>
 
-            <div className="space-x-3">
+            {/* <div className="space-x-3">
               <Link href="/setup">
                 <Button className="bg-[#0A2C66]">
                   <LogIn className="w-4 h-4 mr-2" /> Sign Up
@@ -122,9 +121,9 @@ const Navbar = () => {
                 <Button variant="outline" className="text-[#005544]">
                   <LogIn className="w-4 h-4 mr-2" /> Sign In
                 </Button>
-                <w3m-button />
               </Link>
-            </div>
+            </div> */}
+            <w3m-button />
           </div>
         </div>
       </section>
